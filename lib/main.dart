@@ -1,36 +1,18 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home_page.dart';
 
-void main() {
-  runApp(Adi());
+void main(List<String> args) {
+  runApp(MyApp());
 }
 
-class Adi extends StatelessWidget {
-  const Adi({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+   
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text("adimo",
-                  style: TextStyle(color: Colors.blueAccent, fontSize: 100)),
-              Text("rrr",
-                  style: TextStyle(color: Colors.blueAccent, fontSize: 100)),
-              SizedBox(
-                width: 200,
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [Text("ran"), Text("adi")]),
-              )
-            ],
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
